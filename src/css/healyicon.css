@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/**General CSS**/
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    counter-reset: footnotes;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+      background-color: #f1f5f9;
+      background-image: url("/images/bg/blue.avif");
+      background-size: cover;
+      background-position: 0% 15%;
+  }
+  [role="doc-noteref"]::after {
+    counter-increment: footnotes;
+    content: '[' counter(footnotes) ']';
+    margin-left: 5px;
+    color: #dc2626;
+  }
+  pre[class*="language-" ], code[class*="language-"]  {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
+header {
+    width: 100%;
+    background-image: url("/images/bg/whales.avif");
+    background-repeat: repeat;
+    min-height: 25%;
+    white-space: normal;
+}
+header .headerimage  {
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    clear: both;
+    width: 100%;
+}
+#home header .headerimage , #blog header .headerimage ,#media header .headerimage , .media-content header .headerimage  {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    width: 100%;
+}
+header h1 {
+    max-width: 60%;
+}
+header h1, nav div h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: bold;
+}
+article h1 a, article h2 a{
+    font-family: 'Alfa Slab One', cursive;
+}
+.prose ul, .prose ul li {list-style-type: none;}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Palanquin', 'sans-serif';
+}
+table, th, td {
+    border: 1px solid#B45309;
+  }
+th {
+    background: #A78BFA;
+    font-weight: bold;
+}
+th, td {
+    padding: .5rem;
+}
+tr:nth-child(even){background-color: #FDE68A;}
+
+/**Healy Icons**/
+.healy {
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px; 
+  margin-right: 10px;
+}
+.healy-smol {
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+}
+.healy-reg {
+    height: 64px;
+    width: 64px;
+    background-size: 64px;
+}
+.healy-big {
+    height: 96px;
+    width: 96px;
+    background-size: 96px;
+}
+.healy-huge {
+    height: 112px;
+    width: 112px;
+    background-size: 112px;
+}
+.healy-aaa {
+    background-image: url("/images/icons/aaa.jpg");
+}
+.healy-confused {
+    background-image: url("/images/icons/confused.jpg");
+}
+.healy-content {
+    background-image: url("/images/icons/content.jpg");
+}
+.healy-fauxthot {
+    background-image: url("/images/icons/fauxthot.jpg");
+}
+.healy-happy {
+    background-image: url("/images/icons/happy.jpg");
+}
+.healy-hey {
+    background-image: url("/images/icons/hey.jpg");
+}
+.healy-okfriendo {
+    background-image: url("/images/icons/okfriendo.jpg");
+}
+.healy-reassure {
+    background-image: url("/images/icons/reassure.jpg");
+}
+.healy-sad {
+    background-image: url("/images/icons/sad.jpg");
+}
+.healy-scene {
+    background-image: url("/images/icons/scene.jpg");
+}
+.healy-squint {
+    background-image: url("/images/icons/squint.jpg");
+}
+.healy-thirsty {
+    background-image: url("/images/icons/thirsty.jpg");
+}
+.healy-work {
+    background-image: url("/images/icons/work.jpg");
+}
+@media (max-width: 768px) { 
+    body {
+        font-size: 12px;
+      }
+    header h1 {
+        max-width: 100%;
+    }
+    .prose {
+        font-size: 18px;
+    }
+    .hidemobile {
+        display: none;
+    }
+ }

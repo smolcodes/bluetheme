@@ -1,0 +1,5 @@
+{
+    "layout" : "layouts/book.njk",
+    "permalink": "media/{{ page.fileSlug }}/",
+    "type": "media-content"
+}

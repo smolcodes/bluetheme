@@ -1,0 +1,74 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+#home header {
+  @apply hidden;
+}
+.gradient {
+  @apply bg-gradient-to-t from-purple-300 h-96 -mt-72 w-full;
+}
+mark {
+  @apply bg-yellow-100;
+}
+.blocks {
+  @apply bg-teal-100 rounded-2xl;
+}
+.post-content .overlay,.grid .overlay {
+    @apply bg-gradient-to-br from-cyan-500/70 to-purple-600/70  bg-clip-padding backdrop-filter backdrop-blur-sm;
+}
+.prose blockquote {
+      @apply border-l-4 border-purple-400 px-8 py-4 mb-4 sm:rounded-2xl bg-yellow-100 shadow-xl;
+}
+section .post-content {
+  @apply bg-teal-50 md:p-20 sm:p-10 p-5 mb-10;
+}
+.post-toc {
+  @apply  bg-slate-100 border-2 border-slate-500 rounded-md mb-10 shadow-xl;
+}
+details {@apply mb-2;}
+details summary {
+  @apply font-bold italic bg-purple-200 p-5;
+}
+details p {
+  @apply py-2 px-5;
+}
+article {
+  @apply sm:rounded-2xl prose sm:prose-base md:prose-lg lg:prose-xl max-w-none font-sans text-gray-800 md:m-0 m-auto;
+}
+ h1 {
+  @apply tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-orange-100 to-rose-300 drop-shadow-xl;
+}
+pre[class*="language-" ], code[class*="language-"] {
+  @apply whitespace-normal overflow-x-auto break-words;
+}
+.prose ul {
+  @apply list-disc list-inside marker:text-purple-500;
+}
+.prose p a, .prose li a {
+  @apply bg-teal-100 border-2 border-teal-400  hover:bg-yellow-100 hover:text-slate-600 hover:border-yellow-400 hover:shadow-lg hover:shadow-orange-400/50 hover:border-2 rounded-lg;
+}
+.prose a {@apply inline-block;}
+ .callout {
+    @apply border-2 border-gray-500 px-8 py-4 mb-4 rounded sm:rounded-xl bg-gray-200 shadow-xl;
+  }
+  .callout-yellow {
+    @apply border-2 border-yellow-500 px-8 py-4 mb-4 rounded sm:rounded-xl bg-yellow-100 shadow-xl;
+  }
+  .callout-blue {
+    @apply border-2 border-blue-500 px-8 py-4 mb-4 rounded sm:rounded-xl bg-blue-100 shadow-xl;
+  }
+  .callout-pink {
+    @apply border-2 border-pink-400 px-8 py-4 mb-4 rounded sm:rounded-xl bg-pink-100 shadow-xl;
+  }
+   .callout-purple {
+    @apply border-2 border-purple-300 px-8 py-4 mb-4 rounded sm:rounded-xl bg-purple-100 shadow-xl;
+  }
+  .callout-green {
+    @apply border-2 border-green-300 px-8 py-4 mb-4 rounded sm:rounded-xl bg-green-50 shadow-xl;
+  }
+ .callout-gray {
+    @apply border-2 border-gray-500 px-8 py-4 mb-4 rounded sm:rounded-xl bg-gray-900 shadow-xl;
+  }
+  .warning {
+    @apply border-2 border-red-500 px-8 py-4 mb-4 rounded sm:rounded-xl bg-red-100 text-red-500 shadow-xl;
+  }
